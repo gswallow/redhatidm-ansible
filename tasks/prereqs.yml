@@ -1,0 +1,8 @@
+--
+- name: "Prerequisites | disable nscd"
+  service:
+    name: nscd
+    state: stopped
+    enabled: no
+  tags:
+    - install

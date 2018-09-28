@@ -15,4 +15,4 @@
   tags:
     - install
   when:
-    services_state.ansible_facts.services.nscd.service is defined
+    services_state.ansible_facts.services['nscd.service'] is defined

@@ -3,14 +3,10 @@
   service_facts:
   register: services_state
 
-- name: "Prerequisites | debug" 
-  debug:
-    msg: "{{ services_state.ansible_facts.services }}"
-
 - name: "Prerequisites | disable nscd"
   service:
     name: nscd
-    #state: stopped
+    state: stopped
     enabled: no
   tags:
     - install

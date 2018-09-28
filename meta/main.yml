@@ -1,0 +1,20 @@
+galaxy_info:
+  author: Greg Swallow
+  description: Role to install and configure Red Hat IdM clients
+  company: DeveloperTown
+
+  issue_tracker_url: https://github.com/gswallow/redhatidm-ansible/issues
+  license: MIT
+  min_ansible_version: 2.0
+
+  platforms:
+  - name: Redhat
+    versions:
+      - 6
+      - 7
+
+  galaxy_tags: 
+    - Red Hat
+    - redhat
+
+dependencies: []

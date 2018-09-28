@@ -1,4 +1,2 @@
 ---
-- name: "main | say hi"
-  debug:
-    msg: "Hello!"
+- include: install.yml

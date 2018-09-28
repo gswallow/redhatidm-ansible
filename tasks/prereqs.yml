@@ -5,7 +5,7 @@
 
 - name: "Prerequisites | debug" 
   debug:
-    msg: services_state
+    msg: "{{ services_state }}"
 
 - name: "Prerequisites | disable nscd"
   service:

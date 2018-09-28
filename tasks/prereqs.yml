@@ -1,4 +1,8 @@
 ---
+- name: "Prerequisites | check system services"
+  service_facts:
+  register: services_state
+
 - name: "Prerequisites | disable nscd"
   service:
     name: nscd
@@ -6,3 +10,5 @@
     enabled: no
   tags:
     - install
+  when:
+    service_state.service.nscd is definedd

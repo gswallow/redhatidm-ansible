@@ -1,3 +1,4 @@
 ---
 - include: prereqs.yml
 - include: install.yml
+- include: register.yml

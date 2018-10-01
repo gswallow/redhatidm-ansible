@@ -1,0 +1,5 @@
+redhat_idm_host_description: "A test host"
+redhat_idm_ipa_host: "ipa.example.org"
+redhat_idm_ipa_user: "admin"
+redhat_idm_ipa_pass: "changeme"
+redhat_idm_host_location: "Soldier Field"

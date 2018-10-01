@@ -1,0 +1,16 @@
+---
+- name: "register | Register free-ipa host to IdM server"
+  ipa_host:
+    description: "{{ redhat_idm_host_description }}"
+    fqdn: "{{ ansible_fqdn }}"
+    ipa_host: "{{ redhat_idm_ipa_host }}"
+    ipa_user: "{{ redhat_idm_ipa_user }}"
+    ipa_pass: "{{ redhat_idm_ipa_pass }}"
+    ip_address: "{{ ansible_default_ipv4.address }}"
+    ns_host_location: "{{ redhat_idm_host_location }}"
+    ns_os_version: "{{ ansible_distribution }} {{ ansible_distribution_major_version }}"
+    random_password: yes
+    state: present
+  tags:
+    - register
+  ignore_errors: yes

@@ -14,13 +14,15 @@
     services_state.ansible_facts.services['nscd.service'] is defined
 
 - name: "Prerequisites | unlink /etc/openldap/ldap.conf"
-  file: /etc/openldap/ldap.conf
-  state: absent
+  file: 
+    name: /etc/openldap/ldap.conf
+    state: absent
   tags:
     - install
 
 - name: "Prerequisites | unlink /etc/sssd/sssd.conf"
-  file: /etc/sssd/sssd.conf
-  state: absent
+  file: 
+    name: /etc/sssd/sssd.conf
+    state: absent
   tags:
     - install
